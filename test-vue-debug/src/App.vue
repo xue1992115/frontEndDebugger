@@ -13,6 +13,7 @@ export default {
   },
   setup() {
     onMounted(() => {
+      // eslint-disable-next-line no-debugger
       console.log('onMounted');
     })
   }
