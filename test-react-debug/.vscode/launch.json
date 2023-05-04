@@ -17,7 +17,7 @@
                 // "--incognito"
             ],
             "name": "针对 localhost 启动 Chrome",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:3000",
             "userDataDir": false,
             "webRoot": "${workspaceFolder}",
             "sourceMaps": true,
