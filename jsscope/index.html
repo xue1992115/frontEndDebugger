@@ -7,6 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <script>
+    var a = 1;
+    // debugger;
+    function fun() {
+        const b = 2;
+        // debugger;
+    }
+    fun()
+    {
+        const c = 3;
+        // debugger;
+    }
+    try {
+        throw new Error('错误')
+    } catch (error) {
+        // debugger
+    }
+     with(window) {
+        a = 2;
+        // debugger
+     }
+     with({ hello: 'han'}) {
+       const a = 2;
+       hello = 'xiao'
+        debugger
+     }
+   </script> 
 </body>
 </html>
