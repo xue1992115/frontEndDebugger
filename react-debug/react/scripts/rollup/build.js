@@ -199,6 +199,9 @@ function getRollupOutputOptions(
     name: globalName,
     sourcemap: true,
     esModule: false,
+    sourcemapPathTransform(relativeSourcePath, sourcemapPath) {
+      return relativeSourcePath.replace('../../../../packages', '/Users/hanxiaoxue/Documents/work/frontEndDebugger/react-debug/react/packages')
+    }
   };
 }
 
@@ -355,16 +358,16 @@ function getPlugins(
     //   },
     // },
     // Turn __DEV__ and process.env checks into constants.
-    // replace({
-    //   __DEV__: isProduction ? 'false' : 'true',
-    //   __PROFILE__: isProfiling || !isProduction ? 'true' : 'false',
-    //   __UMD__: isUMDBundle ? 'true' : 'false',
-    //   'process.env.NODE_ENV': isProduction ? "'production'" : "'development'",
-    //   __EXPERIMENTAL__,
-    //   // Enable forked reconciler.
-    //   // NOTE: I did not put much thought into how to configure this.
-    //   __VARIANT__: bundle.enableNewReconciler === true,
-    // }),
+    replace({
+      __DEV__: isProduction ? 'false' : 'true',
+      __PROFILE__: isProfiling || !isProduction ? 'true' : 'false',
+      __UMD__: isUMDBundle ? 'true' : 'false',
+      'process.env.NODE_ENV': isProduction ? "'production'" : "'development'",
+      __EXPERIMENTAL__,
+      // Enable forked reconciler.
+      // NOTE: I did not put much thought into how to configure this.
+      __VARIANT__: bundle.enableNewReconciler === true,
+    }),
     // The CommonJS plugin *only* exists to pull "art" into "react-art".
     // I'm going to port "art" to ES modules to avoid this problem.
     // Please don't enable this for anything else!
