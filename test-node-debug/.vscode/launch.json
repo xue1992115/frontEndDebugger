@@ -6,13 +6,17 @@
     "configurations": [
         // {
         //     "name": "Attach",
-        // //  指定端口号
-        //     "port": 8888, 不指定默认是9229
+        //     //  指定端口号，不指定默认是9229
+        //     "port": 8888, 
         //     "request": "attach",
         //     "skipFiles": [
         //         "<node_internals>/**"
         //     ],
-        //     "type": "node"
+        //     "type": "node",
+        //     "restart": {
+        //         "delay": 1000,
+        //         "maxAttempts": 3
+        //     }
         // },
         {
             "type": "node",
@@ -22,6 +26,10 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js",
+            "args": [
+                "---aaa1",
+                "---aaa2"
+            ]
         }
     ]
 }
