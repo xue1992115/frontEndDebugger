@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/platform-express/","sources":["adapters/index.ts"],"names":[],"mappings":";;;AAAA,4DAAkC","sourcesContent":["export * from './express-adapter';\n"]}

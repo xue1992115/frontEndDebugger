@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.build.json",
+  "compilerOptions": {
+    "outDir": ".",
+    "rootDir": ".",
+    "paths": {
+      "@nestjs/common": ["../common"],
+      "@nestjs/common/*": ["../common/*"],
+      "@nestjs/websockets": ["../websockets"],
+      "@nestjs/websockets/*": ["../websockets/*"]
+    },
+    "sourceRoot": "/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/platform-socket.io"
+  },
+  "exclude": ["node_modules", "dist", "test/**/*", "*.spec.ts"],
+  "references": [
+    {
+      "path": "../common/tsconfig.build.json"
+    },
+    {
+      "path": "../websockets/tsconfig.build.json"
+    }
+  ]
+}

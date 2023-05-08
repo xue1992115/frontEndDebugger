@@ -1,0 +1,1 @@
+{"version":3,"file":"controller.interface.js","sourceRoot":"/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/common/","sources":["interfaces/controllers/controller.interface.ts"],"names":[],"mappings":"","sourcesContent":["export type Controller = object;\n"]}

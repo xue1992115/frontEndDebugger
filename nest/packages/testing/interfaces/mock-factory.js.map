@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-factory.js","sourceRoot":"/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/testing/","sources":["interfaces/mock-factory.ts"],"names":[],"mappings":"","sourcesContent":["import { InstanceToken } from '@nestjs/core/injector/module';\n\nexport type MockFactory = (token?: InstanceToken) => any;\n"]}

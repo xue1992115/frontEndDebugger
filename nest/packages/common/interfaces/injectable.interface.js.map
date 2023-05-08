@@ -1,0 +1,1 @@
+{"version":3,"file":"injectable.interface.js","sourceRoot":"/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/common/","sources":["interfaces/injectable.interface.ts"],"names":[],"mappings":"","sourcesContent":["export type Injectable = unknown;\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/platform-fastify/","sources":["interfaces/index.ts"],"names":[],"mappings":";;;AAAA,+EAAqD;AACrD,uFAA6D","sourcesContent":["export * from './nest-fastify-application.interface';\nexport * from './nest-fastify-body-parser-options.interface';\n"]}

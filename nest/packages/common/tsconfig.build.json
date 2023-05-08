@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.build.json",
+  "compilerOptions": {
+    "outDir": ".",
+    "rootDir": ".",
+    "paths": {},
+    "sourceRoot": "/Users/hanxiaoxue/Documents/work/frontEndDebugger/nest/packages/common"
+  },
+  "exclude": ["node_modules", "dist", "test/**/*", "*.spec.ts"],
+  "references": []
+}
