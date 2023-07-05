@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面试必问的异步顺序的题</title>
+  </head>
+  <body>
+    <script>
+      Promise.resolve().then(() => {
+        console.log("promise2");
+        const timer2 = setTimeout(() => {
+          console.log("timer2");
+        }, 0);
+      });
+      const timer1 = setTimeout(() => {
+        console.log("timer1");
+
+        Promise.resolve().then(() => {
+          console.log("promise2");
+        });
+      }, 0);
+
+      console.log("start");
+    </script>
+  </body>
+</html>
