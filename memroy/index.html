@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>内存分析</title>
+  </head>
+  <body>
+    <button id="btn">点我</button>
+    <script>
+      // 测试console.log导致的内存泄漏
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        const arr = new Array(1000000);
+        console.log(arr, "arr");
+      });
+    </script>
+  </body>
+</html>

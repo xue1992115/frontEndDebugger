@@ -8,7 +8,7 @@
   <body>
     <script>
       Promise.resolve().then(() => {
-        console.log("promise2");
+        console.log("Promise1");
         const timer2 = setTimeout(() => {
           console.log("timer2");
         }, 0);
@@ -22,6 +22,10 @@
       }, 0);
 
       console.log("start");
+      function add(a, b) {
+        return a + b;
+      }
+      add(3, 5)
     </script>
   </body>
 </html>
